@@ -1,0 +1,161 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introducción a Django – HTTP</title>
+    <link>https://lmorillas.github.io/intro-django/docs/http/</link>
+    <description>Recent content in HTTP on Introducción a Django</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Oct 2021 10:29:17 +0200</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/intro-django/docs/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Requests</title>
+      <link>https://lmorillas.github.io/intro-django/docs/http/requests/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/intro-django/docs/http/requests/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#requests&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#requests&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;elementos-de-una-petición&#34;&gt;Elementos de una petición&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Método&lt;/li&gt;
+&lt;li&gt;URI / URL o path&lt;/li&gt;
+&lt;li&gt;Versión del protocolo HTTP&lt;/li&gt;
+&lt;li&gt;Cabeceras adicionales&lt;/li&gt;
+&lt;li&gt;Cuerpo (opcional)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;inspecciona-las-cabeceras-de-una-petición-con-las-devtools&#34;&gt;Inspecciona las cabeceras de una petición con las DevTools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Abre una página con tu navegador y pulsa &lt;code&gt;MAYUS + Ctrl + C&lt;/code&gt; o &lt;code&gt;MAYUS + Cmd + C&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;headers.png&#34; alt=&#34;DevTools&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Responses</title>
+      <link>https://lmorillas.github.io/intro-django/docs/http/mensajes/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/intro-django/docs/http/mensajes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Documentación&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#responses&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#responses&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;responses-consist-of-the-following-elements&#34;&gt;Responses consist of the following elements:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The version of the HTTP protocol they follow.&lt;/li&gt;
+&lt;li&gt;A status code, indicating if the request was successful or not, and why.&lt;/li&gt;
+&lt;li&gt;A status message, a non-authoritative short description of the status code.&lt;/li&gt;
+&lt;li&gt;HTTP headers, like those for requests.&lt;/li&gt;
+&lt;li&gt;Optionally, a body containing the fetched resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;investígalo-con-las-devtools&#34;&gt;Investígalo con las DevTools&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Responses</title>
+      <link>https://lmorillas.github.io/intro-django/docs/http/responses/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/intro-django/docs/http/responses/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Documentación&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#responses&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#responses&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;responses-consist-of-the-following-elements&#34;&gt;Responses consist of the following elements:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The version of the HTTP protocol they follow.&lt;/li&gt;
+&lt;li&gt;A status code, indicating if the request was successful or not, and why.&lt;/li&gt;
+&lt;li&gt;A status message, a non-authoritative short description of the status code.&lt;/li&gt;
+&lt;li&gt;HTTP headers, like those for requests.&lt;/li&gt;
+&lt;li&gt;Optionally, a body containing the fetched resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;investígalo-con-las-devtools&#34;&gt;Investígalo con las DevTools&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sesión típica</title>
+      <link>https://lmorillas.github.io/intro-django/docs/http/sesion/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/intro-django/docs/http/sesion/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Session&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Session&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Establecer conexión&lt;/li&gt;
+&lt;li&gt;Enviar ls petición del cliente
+&lt;ul&gt;
+&lt;li&gt;Importante: métodos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Respuesta del servidor
+&lt;ul&gt;
+&lt;li&gt;Códigos de estado&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lee-el-recurso&#34;&gt;Lee el recurso&lt;/h2&gt;
+&lt;h2 id=&#34;compruébalo-con-las-devtools&#34;&gt;Compruébalo con las DevTools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Código 301 -&amp;gt; &lt;a href=&#34;http://cpilosenlaces.com/&#34;&gt;http://cpilosenlaces.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Código 200 -&amp;gt; &lt;a href=&#34;https://cpilosenlaces.com/&#34;&gt;https://cpilosenlaces.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Código 404 -&amp;gt; &lt;a href=&#34;https://cpilosenlaces.com/paginaquenoexiste&#34;&gt;https://cpilosenlaces.com/paginaquenoexiste&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Prueba con otras páginas que conozcas&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

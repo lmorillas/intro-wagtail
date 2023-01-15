@@ -1,0 +1,512 @@
+
+{
+    "model": "catalog.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Science Fiction"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Dystopian Fiction"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 3,
+    "fields": {
+        "name": "Fantasy Fiction"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 4,
+    "fields": {
+        "name": "Magical Realism"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 5,
+    "fields": {
+        "name": "Family saga"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 6,
+    "fields": {
+        "name": "Bildungsroman"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 7,
+    "fields": {
+        "name": "Thriller"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 8,
+    "fields": {
+        "name": "Southern Gothic"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 9,
+    "fields": {
+        "name": "Legal Story"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 10,
+    "fields": {
+        "name": "War story"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 11,
+    "fields": {
+        "name": "Fiction"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 12,
+    "fields": {
+        "name": "Philosophical fiction"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 13,
+    "fields": {
+        "name": "Philosophical novel"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 14,
+    "fields": {
+        "name": "Psychological Fiction,"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 15,
+    "fields": {
+        "name": "Political novel"
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 1,
+    "fields": {
+        "title": "1984",
+        "author": 1,
+        "summary": "Nineteen Eighty-Four, often published as 1984, is a dystopian novel by English writer George Orwell published in June 1949. The novel is set in the year 1984 when most of the world population have become victims of perpetual war, omnipresent government surveillance and propaganda.",
+        "isbn": "9780451524935",
+        "genre": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 2,
+    "fields": {
+        "title": "Dandelion Wine",
+        "author": 2,
+        "summary": "Dandelion Wine is a 1957 novel by Ray Bradbury, taking place in the summer of 1928 in the fictional town of Green Town, Illinois, based upon Bradbury's childhood home of Waukegan, Illinois. The novel developed from the short story \"Dandelion Wine\" which appeared in the June 1953 issue of Gourmet magazine.",
+        "isbn": "9780553277531",
+        "genre": [
+            1,
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 3,
+    "fields": {
+        "title": "Fahrenheit 451",
+        "author": 2,
+        "summary": "Fahrenheit 451 is a dystopian novel by American writer Ray Bradbury, first published in 1953. It is regarded as one of his best works. The novel presents a future American society where books are outlawed and \"firemen\" burn any that are found.",
+        "isbn": "9781451673319",
+        "genre": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 4,
+    "fields": {
+        "title": "One Hundred Years of Solitude",
+        "author": 3,
+        "summary": "One Hundred Years of Solitude is a landmark 1967 novel by Colombian author Gabriel Garc\u00eda M\u00e1rquez that tells the multi-generational story of the Buend\u00eda family, whose patriarch, Jos\u00e9 Arcadio Buend\u00eda, founded the town of Macondo, a fictitious town in the country of Colombia.",
+        "isbn": "9780060883287",
+        "genre": [
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 5,
+    "fields": {
+        "title": "To Kill a Mockingbird",
+        "author": 4,
+        "summary": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. It was immediately successful, winning the Pulitzer Prize, and has become a classic of modern American literature.",
+        "isbn": "9780060935467",
+        "genre": [
+            6,
+            7,
+            8,
+            9
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 6,
+    "fields": {
+        "title": "For Whom The Bell Tolls",
+        "author": 5,
+        "summary": "For Whom the Bell Tolls is a novel by Ernest Hemingway published in 1940. It tells the story of Robert Jordan, a young American volunteer attached to a Republican guerrilla unit during the Spanish Civil War. As a dynamiter, he is assigned to blow up a bridge during an attack on the city of Segovia.",
+        "isbn": "9780784808795",
+        "genre": [
+            10
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 7,
+    "fields": {
+        "title": "Go Set a Watchman",
+        "author": 4,
+        "summary": "Go Set a Watchman is a novel by Harper Lee published on July 14, 2015 by HarperCollins, United States and William Heinemann, United Kingdom. Although written before her first and only other published novel, the Pulitzer Prize\u2013winning To Kill a Mockingbird\u2014and initially promoted by its publisher as a sequel\u2014it is now accepted as being a first draft of the famous novel, with many passages being used again in To Kill a Mockingbird",
+        "isbn": "9788491390572",
+        "genre": [
+            11
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 8,
+    "fields": {
+        "title": "The Brothers Karamazov",
+        "author": 6,
+        "summary": "The Brothers Karamazov, also translated as The Karamazov Brothers, is the final novel by the Russian author Fyodor Dostoevsky. Dostoevsky spent nearly two years writing The Brothers Karamazov, which was published as a serial in The Russian Messenger from January 1879 to November 1880.",
+        "isbn": "9785521005567",
+        "genre": [
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 9,
+    "fields": {
+        "title": "The Idiot",
+        "author": 6,
+        "summary": "The title is an ironic reference to the central character of the novel, Prince (Knyaz) Lev Nikolayevich Myshkin, a young man whose goodness, open-hearted simplicity and guilelessness lead many of the more worldly characters he encounters to mistakenly assume that he lacks intelligence and insight. In the character of Prince Myshkin, Dostoevsky set himself the task of depicting \"the positively good and beautiful man.\"[1] The novel examines the consequences of placing such a unique individual at the centre of the conflicts, desires, passions and egoism of worldly society, both for the man himself and for those with whom he becomes involved.",
+        "isbn": "9780850670356",
+        "genre": [
+            13
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 10,
+    "fields": {
+        "title": "Crime and Punishment",
+        "author": 6,
+        "summary": "Crime and Punishment focuses on the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who formulates a plan to kill an unscrupulous pawnbroker for her money. Before the killing, Raskolnikov believes that with the money he could liberate himself from poverty and go on to perform great deeds. However, once it is done he finds himself racked with confusion, paranoia, and disgust for what he has done. His ethical justifications disintegrate completely as he struggles with guilt and horror and confronts the real-world moral consequences of his deed.",
+        "isbn": "9788897572657",
+        "genre": [
+            12,
+            14
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 11,
+    "fields": {
+        "title": "Demons",
+        "author": 6,
+        "summary": "Demons is an allegory of the potentially catastrophic consequences of the political and moral nihilism that were becoming prevalent in Russia in the 1860s. A fictional town descends into chaos as it becomes the focal point of an attempted revolution, orchestrated by master conspirator Pyotr Verkhovensky. The mysterious aristocratic figure of Nikolai Stavrogin\u2014Verkhovensky's counterpart in the moral sphere\u2014dominates the book, exercising an extraordinary influence over the hearts and minds of almost all the other characters. The idealistic, western-influenced generation of the 1840s, epitomized in the character of Stepan Verkhovensky (who is both Pyotr Verkhovensky's father and Nikolai Stavrogin's childhood teacher), are presented as the unconscious progenitors and helpless accomplices of the 'demonic' forces that take possession of the town.",
+        "isbn": "9788402040893",
+        "genre": [
+            13,
+            15
+        ]
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "067d48bd-ed71-43a7-90a8-e6172059375a",
+    "fields": {
+        "book": 6,
+        "imprint": "Scribner",
+        "due_back": "2019-09-16",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "1ad9c841-4ce7-4037-9341-d20752550b63",
+    "fields": {
+        "book": 2,
+        "imprint": "Blackstone Audiobooks",
+        "due_back": "2019-03-22",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "1ef0da28-9af0-4023-b9c1-76d2b259dbb7",
+    "fields": {
+        "book": 3,
+        "imprint": "AST",
+        "due_back": null,
+        "borrower": null,
+        "language": "RUS",
+        "status": "a"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "3eccb453-4928-40c9-b5d8-19c0198ea048",
+    "fields": {
+        "book": 10,
+        "imprint": "Penguin",
+        "due_back": null,
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "537a169d-077a-47be-950c-2ab2eeeda4a2",
+    "fields": {
+        "book": 3,
+        "imprint": "Simon & Schuster",
+        "due_back": "2019-03-22",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "540c7c76-7200-45a1-afec-384ca3c8dc1c",
+    "fields": {
+        "book": 5,
+        "imprint": "Harper Perennial Modern Classics",
+        "due_back": null,
+        "borrower": null,
+        "language": "ENU",
+        "status": "a"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "5870fe95-d3aa-43f0-b507-368f8d52689e",
+    "fields": {
+        "book": 4,
+        "imprint": "Harper Perennial Modern Classics",
+        "due_back": null,
+        "borrower": null,
+        "language": "ENU",
+        "status": "a"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "74c429a1-81e9-44c6-a524-3e687af93f28",
+    "fields": {
+        "book": 1,
+        "imprint": "AST",
+        "due_back": "2019-03-22",
+        "borrower": null,
+        "language": "RUS",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "8bb8f418-8879-47f6-8f63-05c09d7b4e01",
+    "fields": {
+        "book": 1,
+        "imprint": "Signet Classic",
+        "due_back": "2019-03-26",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "9254b0c3-7190-47bc-82aa-ccbac108cb88",
+    "fields": {
+        "book": 5,
+        "imprint": "Harper",
+        "due_back": null,
+        "borrower": null,
+        "language": "ENU",
+        "status": "a"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "b41ade65-651d-400a-b104-083ae6416870",
+    "fields": {
+        "book": 2,
+        "imprint": "Bantam Books",
+        "due_back": null,
+        "borrower": null,
+        "language": "ENU",
+        "status": "a"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "bca0f8aa-7dec-4108-8d0a-edb3359a54e5",
+    "fields": {
+        "book": 1,
+        "imprint": "Houghton Mifflin Harcourt",
+        "due_back": null,
+        "borrower": null,
+        "language": "ENU",
+        "status": "a"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "da5d6558-15c9-4d49-b05c-63e671d871ff",
+    "fields": {
+        "book": 7,
+        "imprint": "HarperCollins",
+        "due_back": "2019-09-16",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "e6c175a6-e5dc-42a5-bb7a-66aa3877929f",
+    "fields": {
+        "book": 9,
+        "imprint": "Modern Library",
+        "due_back": "2019-09-16",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "e978ab18-41ff-4e01-b825-58e8d0bd25fc",
+    "fields": {
+        "book": 11,
+        "imprint": "Vintage",
+        "due_back": "2019-09-16",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": "ecddad5f-3000-47ae-8fe7-89df34a08357",
+    "fields": {
+        "book": 8,
+        "imprint": "Farrar, Straus and Giroux",
+        "due_back": "2019-09-16",
+        "borrower": null,
+        "language": "ENU",
+        "status": "m"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 1,
+    "fields": {
+        "first_name": "George",
+        "last_name": "Orwell",
+        "date_of_birth": "1903-06-25",
+        "date_of_death": "1950-01-21"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 2,
+    "fields": {
+        "first_name": "Ray",
+        "last_name": "Bradbury",
+        "date_of_birth": "1920-08-22",
+        "date_of_death": "2012-06-05"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 3,
+    "fields": {
+        "first_name": "Gabriel",
+        "last_name": "Garc\u00eda M\u00e1rquez",
+        "date_of_birth": "1927-03-06",
+        "date_of_death": "2014-04-17"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 4,
+    "fields": {
+        "first_name": "Harper",
+        "last_name": "Lee",
+        "date_of_birth": "1926-04-28",
+        "date_of_death": "2016-02-19"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 5,
+    "fields": {
+        "first_name": "Ernest",
+        "last_name": "Hemingway",
+        "date_of_birth": "1899-07-21",
+        "date_of_death": "1961-07-02"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 6,
+    "fields": {
+        "first_name": "Fyodor",
+        "last_name": "Dostoyevsky",
+        "date_of_birth": "1821-11-11",
+        "date_of_death": "1881-02-09"
+    }
+}
+]

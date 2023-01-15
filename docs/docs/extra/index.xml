@@ -1,0 +1,124 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – Extra</title><link>https://lmorillas.github.io/intro-django/docs/extra/</link><description>Recent content in Extra on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:29:17 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-django/docs/extra/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Git - GitHub Workflow</title><link>https://lmorillas.github.io/intro-django/docs/extra/git/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-django/docs/extra/git/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;strong>📚 Documentación&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.github.com/es/get-started/quickstart/fork-a-repo">https://docs.github.com/es/get-started/quickstart/fork-a-repo&lt;/a> 💗&lt;/li>
+&lt;li>&lt;a href="https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;p>&lt;img src="https://www.freecodecamp.org/news/content/images/2022/02/GitHub-Fork.gif" alt="Fork-Pull request">
+Fuente imagen: &lt;a href="https://www.freecodecamp.org/news/how-to-fork-a-github-repository/">https://www.freecodecamp.org/news/how-to-fork-a-github-repository/&lt;/a>&lt;/p>
+&lt;h2 id="fork-de-un-repositorio">Fork de un repositorio&lt;/h2>
+&lt;p>Interfaz de github&lt;/p>
+&lt;h2 id="clonar-repositorio">Clonar repositorio&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ git clone &amp;lt;url de mi repositorio&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="configurar-remoto-upstream">Configurar remoto upstream&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ git remote -v
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; origin &amp;lt;url&amp;gt; &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>fetch&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; origin &amp;lt;url&amp;gt; &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>push&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ git remote add upstream &amp;lt;repositorio original&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ git remote -v
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="creación-de-ramas--commits">Creación de ramas / commits&lt;/h2>
+&lt;h2 id="sincronizar-con-original">Sincronizar con original&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ git fetch upstream
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>📕 &lt;a href="https://www.atlassian.com/git/tutorials/git-forks-and-upstreams">https://www.atlassian.com/git/tutorials/git-forks-and-upstreams&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="pull-request">Pull request&lt;/h2></description></item><item><title>Docs: Enviar correo</title><link>https://lmorillas.github.io/intro-django/docs/extra/email/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-django/docs/extra/email/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;strong>📚 Documentación&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.djangoproject.com/en/4.1/topics/email/">https://docs.djangoproject.com/en/4.1/topics/email/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="para-testingdebug">Para testing/debug&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># en settings.py&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">EMAIL_BACKEND&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;django.core.mail.backends.console.EmailBackend&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>SMTP de gmail&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">EMAIL_HOST&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;smtp.googlemail.com&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">EMAIL_PORT&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">587&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">EMAIL_HOST_USER&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;USER_MAIL&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">EMAIL_HOST_PASSWORD&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;USER_MAIL_PASSWORD&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">EMAIL_USE_TLS&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">True&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Para utilizar gmail como servidor de corres es necesario permitir el acceso de aplicaciones poco seguras &lt;a href="https://myaccount.google.com/lesssecureapps">https://myaccount.google.com/lesssecureapps&lt;/a>&lt;/p>
+&lt;h2 id="producción">Producción&lt;/h2>
+&lt;ul>
+&lt;li>AWS SES&lt;/li>
+&lt;li>Sendgrid&lt;/li>
+&lt;li>Mailgun&lt;/li>
+&lt;li>&amp;hellip;&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Variables de entorno</title><link>https://lmorillas.github.io/intro-django/docs/extra/entorno/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-django/docs/extra/entorno/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;ul>
+&lt;li>&lt;a href="https://saurabh-kumar.com/python-dotenv/">https://saurabh-kumar.com/python-dotenv/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/henriquebastos/python-decouple/">https://github.com/henriquebastos/python-decouple/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://django-environ.readthedocs.io/en/latest/">https://django-environ.readthedocs.io/en/latest/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;ul>
+&lt;li>
+&lt;p>Instalar
+&lt;code>pip install python-dotenv&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Crear fichero &lt;code>.env&lt;/code> en la raíz del proyecto y añadirlo a &lt;code>.gitignore&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">SECRET_KEY&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;YOUR SECRET KEY&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">GITHUB_KEY&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;YOUR GITHUB KEY&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">GITHUB_SECRET&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;YOUR GITHUB SECRET KEY&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">GOOGLE_KEY&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;YOUR GOOGLE KEY&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">GOOGLE_SECRET&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;YOUR GOOGLE SECRET KEY&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Uso&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">dotenv&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">load_dotenv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">load_dotenv&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># loads the configs from .env&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># SECURITY WARNING: keep the secret key used in production secret!&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">SECRET_KEY&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">str&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">os&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">getenv&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;SECRET_KEY&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># social auth configs for github&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">SOCIAL_AUTH_GITHUB_KEY&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">str&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">os&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">getenv&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;GITHUB_KEY&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">SOCIAL_AUTH_GITHUB_SECRET&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">str&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">os&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">getenv&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;GITHUB_SECRET&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># social auth configs for google&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">SOCIAL_AUTH_GOOGLE_OAUTH2_KEY&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">str&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">os&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">getenv&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;GOOGLE_KEY&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">str&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">os&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">getenv&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;GOOGLE_SECRET&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Túneles con ngrok</title><link>https://lmorillas.github.io/intro-django/docs/extra/ngrok/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-django/docs/extra/ngrok/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;ul>
+&lt;li>&lt;a href="https://ngrok.com/">https://ngrok.com/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;ul>
+&lt;li>Descarga la versión de &lt;code>ngrok&lt;/code> para tu sistema operativo&lt;/li>
+&lt;li>Date de alta en la plataforma &lt;a href="https://dashboard.ngrok.com/signup">https://dashboard.ngrok.com/signup&lt;/a> si no tienes un usuario&lt;/li>
+&lt;li>Configura el token &lt;code>ngrok authtoken &amp;lt;TOKEN DE NGROK&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Crea el túnel: &lt;code>ngrok http 8000&lt;/code> En este caso al puerto 8000 de tu ordenador porque es el que usa django por defecto. Si usas otro puerto, cambia el 8000 por el que uses.&lt;/li>
+&lt;li>Tendrás un mensaje de este tipo:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ngrok by ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session Status online
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Account &amp;lt;tu usuario&amp;gt; &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>Plan: Free&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Version 2.3.40
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Region United States &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>us&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Web Interface http://127.0.0.1:4040
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Forwarding http://559b-88-7-36-xxx.ngrok.io -&amp;gt; http://localhost:8000
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Modifica el &lt;code>settings.py&lt;/code> del proyecto para que el dominio sea el que te proporciona ngrok. Copia la dirección que aparece en el mensaje anterior, en este caso &lt;code>559b-88-7-36-xxx.ngrok.io&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">ALLOWED_HOSTS&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;559b-88-7-36-xxx.ngrok.io&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Lanza el servidor local de django &lt;code>python manage.py runserver&lt;/code>&lt;/li>
+&lt;li>Abre el navegador y accede a la dirección que te proporciona ngrok. En este caso &lt;code>http://559b-88-7-36-xxx.ngrok.io&lt;/code>&lt;/li>
+&lt;/ul></description></item></channel></rss>

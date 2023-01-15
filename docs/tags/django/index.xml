@@ -1,0 +1,108 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – django</title><link>https://lmorillas.github.io/intro-django/tags/django/</link><description>Recent content in django on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-django/tags/django/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Instalación</title><link>https://lmorillas.github.io/intro-django/docs/django/instalacion/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-django/docs/django/instalacion/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Instalación y configuración del entorno para desarrollo:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.djangoproject.com/en/4.1/intro/install/">https://docs.djangoproject.com/en/4.1/intro/install/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://code.visualstudio.com/docs/python/tutorial-django">https://code.visualstudio.com/docs/python/tutorial-django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="instalación-de-python">Instalación de Python&lt;/h2>
+&lt;ul>
+&lt;li>Versión de python? &lt;a href="https://docs.djangoproject.com/en/4.1/faq/install/#faq-python-version-support">https://docs.djangoproject.com/en/4.1/faq/install/#faq-python-version-support&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.python.org/downloads/">https://www.python.org/downloads/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="configuración-de-una-base-de-datos">Configuración de una base de datos&lt;/h2>
+&lt;p>Al inicio no será necesario. Luego podremos usar PostgreSQL, MariaDB, MySQL, Oracle (&lt;a href="https://docs.djangoproject.com/en/3.2/topics/install/#database-installation">https://docs.djangoproject.com/en/3.2/topics/install/#database-installation&lt;/a>)&lt;/p>
+&lt;h2 id="entorno-virtual">Entorno virtual&lt;/h2>
+&lt;p>Creamos carpeta para el proyecto y dentro de esa carpeta:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Linux&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python3 -m venv env
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># macOS&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python3 -m venv env
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Windows&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>py -m venv env
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Activar entorno:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Windows&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>env&lt;span style="color:#4e9a06">\S&lt;/span>cripts&lt;span style="color:#4e9a06">\a&lt;/span>ctivate.bat
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># linux/mac&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">source&lt;/span> tutorial-env/bin/activate
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="instalación-de-django">Instalación de Django&lt;/h2>
+&lt;p>Instalación de una versión oficial: &lt;a href="https://docs.djangoproject.com/en/3.2/topics/install/#installing-official-release">https://docs.djangoproject.com/en/3.2/topics/install/#installing-official-release&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Linux / Mac&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ pip install Django
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Windows&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...&lt;span style="color:#4e9a06">\&amp;gt;&lt;/span> py -m pip install Django
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="comprobación">Comprobación&lt;/h2>
+&lt;p>Usa el intérprete de python&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">django&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#204a87">print&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">django&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get_version&lt;/span>&lt;span style="color:#000;font-weight:bold">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0000cf;font-weight:bold">4.1&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="configuración-del-entorno-visual-studio-code">Configuración del entorno (Visual Studio Code)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://code.visualstudio.com/docs/python/tutorial-django">https://code.visualstudio.com/docs/python/tutorial-django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.microsoft.com/es-es/visualstudio/python/learn-django-in-visual-studio-step-01-project-and-solution">https://docs.microsoft.com/es-es/visualstudio/python/learn-django-in-visual-studio-step-01-project-and-solution&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="browser-para-sqlite">Browser para SQLite&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://sqlitebrowser.org/dl/">https://sqlitebrowser.org/dl/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Creación de un proyecto y una app</title><link>https://lmorillas.github.io/intro-django/docs/django/creacion-proyecto-app/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-django/docs/django/creacion-proyecto-app/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Documentación&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Tutorial_local_library_website">https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Tutorial_local_library_website&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.djangoproject.com/es/4.1/intro/tutorial01/">https://docs.djangoproject.com/es/4.1/intro/tutorial01/&lt;/a>&lt;/li>
+&lt;li>Objetivo: &lt;strong>locallibrary&lt;/strong> &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;blockquote>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="creación-de-proyecto">Creación de proyecto&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ django-admin startproject locallibrary
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code>locallibrary/
+manage.py
+locallibrary/
+__init__.py
+settings.py
+urls.py
+asgi.py
+wsgi.py
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ python3 manage.py runserver
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Parar con &lt;code>Ctrl+C&lt;/code>&lt;/p>
+&lt;h2 id="creación-aplicación">Creación aplicación&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ python3 manage.py startapp catalog
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>** Estructura**&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>locallibrary/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> manage.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> locallibrary/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> catalog/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> admin.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apps.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> models.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tests.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> views.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> migrations/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="modelo-vista-template">Modelo Vista Template&lt;/h2>
+&lt;p>Diseño común: patrón Modelo Vista Controlador (&lt;strong>MVC&lt;/strong>)
+Django usa: &lt;strong>MVT&lt;/strong>: Permite que las templates puedan desarrollarse en cualquier lenguaje:&lt;/p>
+&lt;ul>
+&lt;li>Modelos y Vistas se escriben en &lt;strong>Python&lt;/strong>&lt;/li>
+&lt;li>Templates se escriben en &lt;strong>html&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="registrar-app">Registrar app&lt;/h2>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#registering_the_catalog_application">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#registering_the_catalog_application&lt;/a>&lt;/p>
+&lt;h2 id="especificar-base-de-datos">Especificar base de datos&lt;/h2>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#specifying_the_database">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#specifying_the_database&lt;/a>&lt;/p>
+&lt;h2 id="configuración-local">Configuración local&lt;/h2>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#other_project_settings">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#other_project_settings&lt;/a>&lt;/p>
+&lt;h2 id="url-mapper">URL mapper&lt;/h2>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#hooking_up_the_url_mapper">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#hooking_up_the_url_mapper&lt;/a>&lt;/p>
+&lt;h2 id="testing">Testing&lt;/h2>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#testing_the_website_framework">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#testing_the_website_framework&lt;/a>&lt;/p>
+&lt;h2 id="running">Running&lt;/h2>
+&lt;p>&lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#running_the_website">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website#running_the_website&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,86 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introducción a Django – Crispy</title>
+    <link>https://lmorillas.github.io/intro-django/tags/crispy/</link>
+    <description>Recent content in Crispy on Introducción a Django</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/intro-django/tags/crispy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Formularios - Crispy</title>
+      <link>https://lmorillas.github.io/intro-django/docs/django/formularios_crispy/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/intro-django/docs/django/formularios_crispy/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Documentación oficial:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://django-crispy-forms.readthedocs.io/en/latest/&#34;&gt;https://django-crispy-forms.readthedocs.io/en/latest/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/django-crispy-forms/django-crispy-forms&#34;&gt;https://github.com/django-crispy-forms/django-crispy-forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tutoriales:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://simpleisbetterthancomplex.com/tutorial/2018/11/28/advanced-form-rendering-with-django-crispy-forms.html&#34;&gt;https://simpleisbetterthancomplex.com/tutorial/2018/11/28/advanced-form-rendering-with-django-crispy-forms.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.merixstudio.com/blog/django-crispy-forms-what-are-they-about/&#34;&gt;https://www.merixstudio.com/blog/django-crispy-forms-what-are-they-about/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dontrepeatyourself.org/post/django-forms-django-crispy-forms/&#34;&gt;https://dontrepeatyourself.org/post/django-forms-django-crispy-forms/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;situación&#34;&gt;Situación&lt;/h2&gt;
+&lt;p&gt;Cuando nace &lt;strong&gt;Django&lt;/strong&gt; internet era mucho más simple. No existían los UI toolkits como Boostrap. A partir de 2009 se empieza a trabajar en lo que ahora es &lt;strong&gt;Crispy Forms&lt;/strong&gt;, que mejora la creación y presentación de formularios.&lt;/p&gt;
+&lt;h2 id=&#34;instalación&#34;&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://django-crispy-forms.readthedocs.io/en/latest/install.html&#34;&gt;https://django-crispy-forms.readthedocs.io/en/latest/install.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ pip install django-crispy-forms
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Configuración de Django&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;INSTALLED_APPS&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;crispy_forms&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Se pueden usar distintos &lt;strong&gt;template packs&lt;/strong&gt; &lt;a href=&#34;https://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs&#34;&gt;https://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# en settings.py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;CRISPY_TEMPLATE_PACK&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;bootstrap4&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;uso&#34;&gt;Uso&lt;/h2&gt;
+&lt;h3 id=&#34;crispy-filter&#34;&gt;Crispy Filter&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{% load crispy_forms_tags %}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;form&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;post&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;uniForm&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{ my_formset|crispy }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-crispy--tag&#34;&gt;{% crispy %} tag&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_forms.html&#34;&gt;https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_forms.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://django-crispy-forms.readthedocs.io/en/latest/form_helper.html&#34;&gt;https://django-crispy-forms.readthedocs.io/en/latest/form_helper.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Podemos incluir el formulario y un &lt;strong&gt;helper&lt;/strong&gt; que dirige su presentación.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{% load crispy_forms_tags %}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{% crispy form  %}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;layouts&#34;&gt;Layouts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://django-crispy-forms.readthedocs.io/en/latest/layouts.html&#34;&gt;https://django-crispy-forms.readthedocs.io/en/latest/layouts.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ejemplos de uso:
+** &lt;a href=&#34;https://github.com/sibtc/advanced-crispy-forms-examples/blob/master/mysite/core/forms.py&#34;&gt;https://github.com/sibtc/advanced-crispy-forms-examples/blob/master/mysite/core/forms.py&lt;/a&gt;
+** &lt;a href=&#34;https://github.com/s-kust/django-advanced-forms&#34;&gt;https://github.com/s-kust/django-advanced-forms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

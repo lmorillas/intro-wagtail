@@ -1,0 +1,95 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introducción a Django – ejercicio</title>
+    <link>https://lmorillas.github.io/intro-django/tags/ejercicio/</link>
+    <description>Recent content in ejercicio on Introducción a Django</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/intro-django/tags/ejercicio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Ejercicios repaso y profundización</title>
+      <link>https://lmorillas.github.io/intro-django/docs/django/ejercicios_repaso/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/intro-django/docs/django/ejercicios_repaso/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Documentación:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/&#34;&gt;https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.djangoproject.com/en/3.2/intro/&#34;&gt;https://docs.djangoproject.com/en/3.2/intro/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;revisar-instalación&#34;&gt;Revisar instalación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Entorno virtual&lt;/li&gt;
+&lt;li&gt;Activar e instalar django&lt;/li&gt;
+&lt;li&gt;Crear proyecto y app&lt;/li&gt;
+&lt;li&gt;Si no has creado un repositorio git, es el momento.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;modificar-plantillas-para-página-principal&#34;&gt;Modificar plantillas para página principal&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Crea un menú (navbar) &lt;a href=&#34;https://getbootstrap.com/docs/5.1/examples/navbars/&#34;&gt;https://getbootstrap.com/docs/5.1/examples/navbars/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Crea una página de contacto/acerca de&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;añade-los-modelos-que-faltan&#34;&gt;Añade los modelos que faltan&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Idiomas de los libros (modelo &lt;strong&gt;Language&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modelo &lt;strong&gt;Bookinstance&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inserta unos libros
+Revisa la documentación de &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models&#34;&gt;https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Añade los modelos al admin&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;página-inicial&#34;&gt;Página inicial&lt;/h2&gt;
+&lt;p&gt;En la página incial se verá:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;El menú&lt;/li&gt;
+&lt;li&gt;Logo o imagen en grande de la web&lt;/li&gt;
+&lt;li&gt;Resumen de número de libros del catálogo y número de autores&lt;/li&gt;
+&lt;li&gt;Últimos libros añadidos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;añade-una-nueva-clase-revisión-para-que-los-usuarios-puedan-valorar-un-libro&#34;&gt;Añade una nueva clase &lt;strong&gt;Revisión&lt;/strong&gt; para que los usuarios puedan valorar un libro:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Usuario. Usa el modelo &lt;strong&gt;User&lt;/strong&gt; de Django:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;django.contrib.auth.models&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;User&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fecha de la revisión&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puntuación (1-5)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Texto&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Un usuario sólo puede valorar un libro una vez. Podrá modificar su valoración.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
