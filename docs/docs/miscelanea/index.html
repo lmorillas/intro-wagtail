@@ -4,7 +4,6 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.109.0">
-<link rel="alternate" type="application/rss&#43;xml" href="https://lmorillas.github.io/intro-wagtail/docs/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -19,19 +18,24 @@
 <link rel="icon" type="image/png" href="/intro-wagtail/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/intro-wagtail/favicons/android-192x192.png" sizes="192x192">
 
-<title>Wagtail CMS | Introducción a Django</title>
-<meta name="description" content="Introducción al desarrollo de CMSs con Wagtail
+<title>Miscelanea | Introducción a Django</title>
+<meta name="description" content="Configuraciones varias
 ">
-<meta property="og:title" content="Wagtail CMS" />
-<meta property="og:description" content="Introducción al desarrollo de CMSs con Wagtail
+<meta property="og:title" content="Miscelanea" />
+<meta property="og:description" content="Configuraciones varias
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lmorillas.github.io/intro-wagtail/docs/" /><meta property="og:site_name" content="Introducción a Django" />
-<meta itemprop="name" content="Wagtail CMS">
-<meta itemprop="description" content="Introducción al desarrollo de CMSs con Wagtail
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Wagtail CMS"/>
-<meta name="twitter:description" content="Introducción al desarrollo de CMSs con Wagtail
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lmorillas.github.io/intro-wagtail/docs/miscelanea/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-10-21T10:36:54+02:00" />
+<meta property="article:modified_time" content="2023-01-15T19:15:56+01:00" /><meta property="og:site_name" content="Introducción a Django" />
+<meta itemprop="name" content="Miscelanea">
+<meta itemprop="description" content="Configuraciones varias
+"><meta itemprop="datePublished" content="2021-10-21T10:36:54+02:00" />
+<meta itemprop="dateModified" content="2023-01-15T19:15:56+01:00" />
+<meta itemprop="wordCount" content="65">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Miscelanea"/>
+<meta name="twitter:description" content="Configuraciones varias
 "/>
 
 
@@ -46,7 +50,7 @@
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -79,7 +83,7 @@
   <nav class="collapse td-sidebar-nav foldable-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-intro-wagtaildocs-li">
-  <a href="/intro-wagtail/docs/" title="Wagtail CMS" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section tree-root" id="m-intro-wagtaildocs"><span class="td-sidebar-nav-active-item">Wagtail</span></a>
+  <a href="/intro-wagtail/docs/" title="Wagtail CMS" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-intro-wagtaildocs"><span class="">Wagtail</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-intro-wagtaildocsinstalacion-li">
   <input type="checkbox" id="m-intro-wagtaildocsinstalacion-check"/>
@@ -109,9 +113,9 @@
   <input type="checkbox" id="m-intro-wagtaildocseditores-check"/>
   <label for="m-intro-wagtaildocseditores-check"><a href="/intro-wagtail/docs/editores/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-intro-wagtaildocseditores"><span class="">Manual de editores</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-intro-wagtaildocsmiscelanea-li">
-  <input type="checkbox" id="m-intro-wagtaildocsmiscelanea-check"/>
-  <label for="m-intro-wagtaildocsmiscelanea-check"><a href="/intro-wagtail/docs/miscelanea/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-intro-wagtaildocsmiscelanea"><span class="">Miscelanea</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-intro-wagtaildocsmiscelanea-li">
+  <input type="checkbox" id="m-intro-wagtaildocsmiscelanea-check" checked/>
+  <label for="m-intro-wagtaildocsmiscelanea-check"><a href="/intro-wagtail/docs/miscelanea/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-intro-wagtaildocsmiscelanea"><span class="td-sidebar-nav-active-item">Miscelanea</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-intro-wagtaildocspeliculas-li">
   <input type="checkbox" id="m-intro-wagtaildocspeliculas-check"/>
@@ -145,6 +149,14 @@
             
             
 
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#jerarquías-de-páginas">Jerarquías de páginas</a></li>
+    <li><a href="#configuración-editor">Configuración editor</a></li>
+    <li><a href="#limitar-richtextfield">Limitar RichTextField</a></li>
+  </ul>
+</nav></div>
 
 
 
@@ -188,17 +200,20 @@
             
   
 
-            <nav aria-label="breadcrumb" class="td-breadcrumbs td-breadcrumbs__single">
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="https://lmorillas.github.io/intro-wagtail/docs/">Wagtail</a>
+  </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://lmorillas.github.io/intro-wagtail/docs/" aria-disabled="true" class="btn-link disabled">Wagtail</a>
+    <a href="https://lmorillas.github.io/intro-wagtail/docs/miscelanea/" aria-disabled="true" class="btn-link disabled">Miscelanea</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Wagtail CMS</h1>
-  <div class="lead">Introducción al desarrollo de CMSs con Wagtail</div>
+	<h1>Miscelanea</h1>
+	<div class="lead">Configuraciones varias</div>
 	<header class="article-meta">
 		
 
@@ -213,125 +228,45 @@
   
 
 		
-	</header>
+	</header>    
 	
-        <div class="section-index">
-    
-    
-    
-    
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/instalacion/">Instalación</a>
-                </h5>
-                <p>Instalación entorno</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/primeros_pasos/">Primeros pasos</a>
-                </h5>
-                <p>Primer sitio con wagtail</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/maquetar_paginas/">Añadir tema bootstrap</a>
-                </h5>
-                <p>Tema con bootstrap. Maquetar páginas</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/imagenes/">Cómo usar imágenes</a>
-                </h5>
-                <p>Usando imágenes en plantillas</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/streamfield/">Gestión de contenido mixto</a>
-                </h5>
-                <p>Gestión de contenido mixto</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/backerydemo/">Demo de Wagtail</a>
-                </h5>
-                <p>Demo de Wagtail</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/editores/">Manual de editores</a>
-                </h5>
-                <p>Cómo usar el CMS</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/miscelanea/">Miscelanea</a>
-                </h5>
-                <p>Configuraciones varias</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/peliculas/">Aplicación películas</a>
-                </h5>
-                <p>Aplicación de películas</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/despliegue/">Despliegue</a>
-                </h5>
-                <p>Servidor en producción</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/testing/">Testing</a>
-                </h5>
-                <p>Configuraciones varias</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/extensiones/">Extensiones</a>
-                </h5>
-                <p>Extensiones interesantes</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/intro-wagtail/docs/restapi/">REST API</a>
-                </h5>
-                <p>REST API</p>
-            </div>
-        
-    
+
+<div class="pageinfo pageinfo-primary">
+
 </div>
+
+<h2 id="jerarquías-de-páginas">Jerarquías de páginas</h2>
+<ul>
+<li><a href="https://docs.wagtail.io/en/stable/topics/pages.html#page-type-business-rules">https://docs.wagtail.io/en/stable/topics/pages.html#page-type-business-rules</a></li>
+</ul>
+<p>Definir <code>parent_page_types</code>  y  <code>subpage_types</code> en modelos.</p>
+<h2 id="configuración-editor">Configuración editor</h2>
+<ul>
+<li><a href="https://docs.wagtail.io/en/stable/advanced_topics/customisation/page_editing_interface.html">https://docs.wagtail.io/en/stable/advanced_topics/customisation/page_editing_interface.html</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">wagtail.admin.edit_handlers</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">TabbedInterface</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">ObjectList</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">BlogPage</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Page</span><span style="color:#000;font-weight:bold">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic"># field definitions omitted</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">content_panels</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">FieldPanel</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;title&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">classname</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;full title&#34;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">FieldPanel</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;date&#39;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">FieldPanel</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">classname</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;full&#34;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">sidebar_content_panels</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">SnippetChooserPanel</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;advert&#39;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">InlinePanel</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;related_links&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">label</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Related links&#34;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">edit_handler</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">TabbedInterface</span><span style="color:#000;font-weight:bold">([</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">ObjectList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">content_panels</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">heading</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;Content&#39;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">ObjectList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">sidebar_content_panels</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">heading</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;Sidebar content&#39;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">ObjectList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Page</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">promote_panels</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">heading</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;Promote&#39;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">ObjectList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Page</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings_panels</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">heading</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;Settings&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">classname</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;settings&#34;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">])</span>
+</span></span></code></pre></div><h2 id="limitar-richtextfield">Limitar RichTextField</h2>
+<p><code>body = RichTextField(features=['h2', 'h3', 'bold', 'italic', 'link'])</code></p>
 
 	
 	
@@ -340,6 +275,7 @@
 </div>
 
 </div>
+
 
           </main>
         </div>
