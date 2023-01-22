@@ -1,58 +1,30 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Introducción a Django – instalación</title>
-    <link>https://lmorillas.github.io/intro-wagtail/tags/instalaci%C3%B3n/</link>
-    <description>Recent content in instalación on Introducción a Django</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate>
-    
-	  <atom:link href="https://lmorillas.github.io/intro-wagtail/tags/instalaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Instalación</title>
-      <link>https://lmorillas.github.io/intro-wagtail/docs/instalacion/</link>
-      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
-      
-      <guid>https://lmorillas.github.io/intro-wagtail/docs/instalacion/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Información general de Wagtail:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://wagtail.io/&#34;&gt;https://wagtail.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Instalación:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.wagtail.io/en/stable/getting_started/index.html#quick-install&#34;&gt;https://docs.wagtail.io/en/stable/getting_started/index.html#quick-install&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;instalación-con-un-entorno-virtual&#34;&gt;Instalación con un entorno virtual&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# preparación directorio&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mkdir wagtail_project &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; wagtail_project
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# creación y activación del entorno&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ python3 -m venv env
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; env/bin/activate
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# instalar wagtail&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;env&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;$ pip install wagtail
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# creación de un sitio con wagtail&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;env&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;$ wagtail start wagtail_bootstrap_blog .
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# crear tablas bd&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;env&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;$ python manage.py migrate
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;env&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;$ python manage.py runserver
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;El sitio estará funcionando en http://127.0.0.1:8000/&lt;/p&gt;
-&lt;p&gt;Archivos creados:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Dockerfile
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – instalación</title><link>https://lmorillas.github.io/intro-wagtail/tags/instalaci%C3%B3n/</link><description>Recent content in instalación on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-wagtail/tags/instalaci%C3%B3n/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Instalación</title><link>https://lmorillas.github.io/intro-wagtail/docs/instalacion/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/instalacion/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Información general de Wagtail:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://wagtail.io/">https://wagtail.io/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Instalación:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.wagtail.io/en/stable/getting_started/index.html#quick-install">https://docs.wagtail.io/en/stable/getting_started/index.html#quick-install&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="instalación-con-un-entorno-virtual">Instalación con un entorno virtual&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># preparación directorio&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ mkdir wagtail_project &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#204a87">cd&lt;/span> wagtail_project
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># creación y activación del entorno&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ python3 -m venv env
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ &lt;span style="color:#204a87">source&lt;/span> env/bin/activate
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># instalar wagtail&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>env&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>$ pip install wagtail
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># creación de un sitio con wagtail&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>env&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>$ wagtail start wagtail_bootstrap_blog .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># crear tablas bd&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>env&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>$ python manage.py migrate
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>env&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>$ python manage.py runserver
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>El sitio estará funcionando en http://127.0.0.1:8000/&lt;/p>
+&lt;p>Archivos creados:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Dockerfile
 db.sqlite3
 env
 home
@@ -60,15 +32,9 @@ manage.py
 requirements.txt
 search
 wagtail_bootstrap_blog
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;fíjate&#34;&gt;Fíjate:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Dockerfile&lt;/code&gt; es para despliegue con docker&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;db.sqlite3&lt;/code&gt; es la bbdd local&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;home&lt;/code&gt; y &lt;code&gt;search&lt;/code&gt; son aplicaciones django que crea wagtail por defecto&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/code>&lt;/pre>&lt;h2 id="fíjate">Fíjate:&lt;/h2>
+&lt;ol>
+&lt;li>&lt;code>Dockerfile&lt;/code> es para despliegue con docker&lt;/li>
+&lt;li>&lt;code>db.sqlite3&lt;/code> es la bbdd local&lt;/li>
+&lt;li>&lt;code>home&lt;/code> y &lt;code>search&lt;/code> son aplicaciones django que crea wagtail por defecto&lt;/li>
+&lt;/ol></description></item></channel></rss>

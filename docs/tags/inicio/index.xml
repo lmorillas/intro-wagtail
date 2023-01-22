@@ -1,43 +1,16 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Introducción a Django – inicio</title>
-    <link>https://lmorillas.github.io/intro-wagtail/tags/inicio/</link>
-    <description>Recent content in inicio on Introducción a Django</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate>
-    
-	  <atom:link href="https://lmorillas.github.io/intro-wagtail/tags/inicio/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Primeros pasos</title>
-      <link>https://lmorillas.github.io/intro-wagtail/docs/primeros_pasos/</link>
-      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
-      
-      <guid>https://lmorillas.github.io/intro-wagtail/docs/primeros_pasos/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Tutorial&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.wagtail.io/en/stable/getting_started/tutorial.html&#34;&gt;https://docs.wagtail.io/en/stable/getting_started/tutorial.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Sigue el tutorial inicial de Wagtail: &lt;a href=&#34;https://docs.wagtail.io/en/stable/getting_started/tutorial.html&#34;&gt;https://docs.wagtail.io/en/stable/getting_started/tutorial.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Consulta las dudas que surjan en el proceso.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – inicio</title><link>https://lmorillas.github.io/intro-wagtail/tags/inicio/</link><description>Recent content in inicio on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:36:54 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-wagtail/tags/inicio/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Primeros pasos</title><link>https://lmorillas.github.io/intro-wagtail/docs/primeros_pasos/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/primeros_pasos/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Tutorial&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.wagtail.io/en/stable/getting_started/tutorial.html">https://docs.wagtail.io/en/stable/getting_started/tutorial.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;p>Sigue el tutorial inicial de Wagtail: &lt;a href="https://docs.wagtail.io/en/stable/getting_started/tutorial.html">https://docs.wagtail.io/en/stable/getting_started/tutorial.html&lt;/a>&lt;/p>
+&lt;p>Consulta las dudas que surjan en el proceso:&lt;/p>
+&lt;ul>
+&lt;li>Reglas de páginas: &lt;a href="https://docs.wagtail.org/en/stable/topics/pages.html#page-type-business-rules">https://docs.wagtail.org/en/stable/topics/pages.html#page-type-business-rules&lt;/a>&lt;/li>
+&lt;li>Descripción: &lt;a href="https://docs.wagtail.org/en/stable/topics/pages.html#page-descriptions">https://docs.wagtail.org/en/stable/topics/pages.html#page-descriptions&lt;/a>&lt;/li>
+&lt;li>Template context: &lt;a href="https://docs.wagtail.org/en/stable/topics/pages.html#template-context">https://docs.wagtail.org/en/stable/topics/pages.html#template-context&lt;/a>&lt;/li>
+&lt;li>Inline models: &lt;a href="https://docs.wagtail.org/en/stable/topics/pages.html#inline-models">https://docs.wagtail.org/en/stable/topics/pages.html#inline-models&lt;/a>&lt;/li>
+&lt;li>Adaptar interfaz de edición: &lt;a href="https://docs.wagtail.org/en/stable/advanced_topics/customisation/page_editing_interface.html">https://docs.wagtail.org/en/stable/advanced_topics/customisation/page_editing_interface.html&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
