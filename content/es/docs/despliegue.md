@@ -5,6 +5,23 @@ weight: 90
 description: >
   Servidor en producción
 tags: []
+docs: >
+  * https://www.endpointdev.com/blog/2022/06/how-to-deploy-django-app-with-aurora-serverless-and-copilot/
+  * https://www.endpointdev.com/blog/2022/06/how-to-deploy-containerized-django-app-with-aws-copilot/
+  * https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04
+  * https://arctype.com/blog/install-django-ubuntu/
+  * https://www.linkedin.com/pulse/how-deploy-django-application-aws-ubuntu-ec2-nginx-uwsgi-yiqing-lan/
+
+
+  * https://github.com/testdrivenio/django-docker-s3/blob/master/docker-compose.yml
+  * https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/
+  * https://realpython.com/django-nginx-gunicorn/#making-your-site-production-ready-with-https
+  * https://web.archive.org/web/20220108092237/https://engineertodeveloper.com/category/wagtail/
+  * https://github.com/neon-jungle/wagtail-birdsong
+  * https://blog.ichasco.com/nginx-mejorar-el-rendimiento-con-la-cache/
+
+  * https://github.com/cfpb/consumerfinance.gov
+
 ---
 
 {{% pageinfo %}}
