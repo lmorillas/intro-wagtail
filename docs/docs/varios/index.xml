@@ -156,7 +156,21 @@ alias /home/app/web/staticfiles/;
 location /media/ {
 alias /home/app/web/mediafiles/;
 }
-&lt;/code>&lt;/pre></description></item><item><title>Docs: SEO</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Docs: S3</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/s3/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/s3/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="documentación">Documentación&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.aws.amazon.com/code-library/latest/ug/python_3_s3_code_examples.html">https://docs.aws.amazon.com/code-library/latest/ug/python_3_s3_code_examples.html&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/">https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.caktusgroup.com/blog/2014/11/10/Using-Amazon-S3-to-store-your-Django-sites-static-and-media-files/">https://www.caktusgroup.com/blog/2014/11/10/Using-Amazon-S3-to-store-your-Django-sites-static-and-media-files/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://caktus.github.io/developer-documentation/reference/pre-2021/services/s3/">https://caktus.github.io/developer-documentation/reference/pre-2021/services/s3/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="para-familiarizarnos">Para familiarizarnos&lt;/h2>
+&lt;blockquote>
+&lt;p>Crea una Web estática en S3&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a href="https://docs.aws.amazon.com/es_es/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html">https://docs.aws.amazon.com/es_es/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html&lt;/a>&lt;/p></description></item><item><title>Docs: SEO</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;ul>
 &lt;li>&lt;a href="https://www.innovocomunicacion.com/posicionamiento-web-seo-sem-y-ppc/">https://www.innovocomunicacion.com/posicionamiento-web-seo-sem-y-ppc/&lt;/a>&lt;/li>
