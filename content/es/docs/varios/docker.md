@@ -110,3 +110,84 @@ volumes:
   dbbakery:
 
 ```
+
+## Añadir contenedor de nginx
+{{% pageinfo %}}
+### Ayuda:
+* https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
+{{% /pageinfo %}}
+```yml
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_volume:/usr/src/app/staticfiles
+      - media_volume:/usr/src/app/mediafiles
+    ports:
+      - 1337:80
+    depends_on:
+      - wagtail # el nombre que hayamo dado al servicio de nuestra web
+```
+
+### Estructura
+```sh
+└── nginx
+    ├── Dockerfile
+    └── nginx.conf
+```
+### Dockerfile
+```bash
+FROM nginx:1.23-alpine
+
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d
+```
+### conf.d
+```conf
+upstream bakery {
+    server wagtail:8000;
+}
+
+server {
+
+    listen 80;
+
+    location / {
+        proxy_pass http://bakery;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $host;
+        proxy_redirect off;
+    }
+
+  
+}
+```
+
+
+## Cambio a servidor producción
+Modificar en el servicio de wagtail
+```yaml
+command: gunicorn bakery.wsgi:application --bind 0.0.0.0:8000
+expose:
+  - 8000  # Ahora es un puerto interno
+```
+
+## Static files
+Compartir mediante volúmenes:
+### Configurar volúmenes en los servicios de wagtail y nginx
+```yaml
+    volumes:
+      - ./static_volume:/home/app/web/staticfiles
+      - ./media_volume:/home/app/web/mediafiles
+```
+
+### Añadir configuración a nginx
+
+```
+    location /static/ {
+        alias /home/app/web/staticfiles/;
+    }
+
+    location /media/ {
+        alias /home/app/web/mediafiles/;
+    }
+```
