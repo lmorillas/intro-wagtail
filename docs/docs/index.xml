@@ -614,6 +614,7 @@ alias /home/app/web/mediafiles/;
 &lt;ul>
 &lt;li>&lt;a href="https://docs.wagtail.org/en/stable/advanced_topics/api/index.html">https://docs.wagtail.org/en/stable/advanced_topics/api/index.html&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b">https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/div>
 &lt;h2 id="configuración">Configuración&lt;/h2>

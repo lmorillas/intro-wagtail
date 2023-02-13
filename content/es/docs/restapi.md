@@ -10,6 +10,7 @@ tags: []
 {{% pageinfo %}}
 * https://docs.wagtail.org/en/stable/advanced_topics/api/index.html
 * https://www.django-rest-framework.org/
+* https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b
 {{% /pageinfo %}}
 
 ## Configuración 
