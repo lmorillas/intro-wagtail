@@ -191,7 +191,15 @@ alias /home/app/web/mediafiles/;
 &lt;/div>
 &lt;h2 id="en-obras">En obras&lt;/h2>
 &lt;p>&lt;img src="https://thumbs.gfycat.com/BabyishFailingAngelfish-size_restricted.gif" alt="En obras">&lt;/p>
-&lt;p>&lt;img src="https://dc722jrlp2zu8.cloudfront.net/media/uploads/2021/09/17/1.jpg" alt="AWS Serverless">&lt;/p></description></item><item><title>Docs: SEO</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</guid><description>
+&lt;p>&lt;img src="https://dc722jrlp2zu8.cloudfront.net/media/uploads/2021/09/17/1.jpg" alt="AWS Serverless">&lt;/p></description></item><item><title>Docs: CMS Headless</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/headless/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/headless/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;ul>
+&lt;li>&lt;a href="https://wagtail.org/headless-cms/">https://wagtail.org/headless-cms/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://areweheadlessyet.wagtail.org/">https://areweheadlessyet.wagtail.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://wagtail.org/blog/headless-wagtail-guide/">https://wagtail.org/blog/headless-wagtail-guide/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learnwagtail.com/tutorials/how-to-enable-the-v2-api-to-create-a-headless-cms/">https://learnwagtail.com/tutorials/how-to-enable-the-v2-api-to-create-a-headless-cms/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div></description></item><item><title>Docs: SEO</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/seo/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;ul>
 &lt;li>&lt;a href="https://www.innovocomunicacion.com/posicionamiento-web-seo-sem-y-ppc/">https://www.innovocomunicacion.com/posicionamiento-web-seo-sem-y-ppc/&lt;/a>&lt;/li>
@@ -209,4 +217,13 @@ alias /home/app/web/mediafiles/;
 &lt;li>SEM (Search Engine Marketing) son todas las acciones que realizamos para posicionar nuestra página web en los principales motores de búsqueda. SEO, marketing en redes sociales, campañas mediante Adwords de Google (PPC), o sencillamente gracias a los contenidos publicados periódicamente en un blog. El SEM englobaría todas las acciones que tengamos incluidas en nuestro plan de comunicación digital.&lt;/li>
 &lt;li>SEO (Search Engine Optimization): es el resultado orgánico del posicionamiento de nuestra web en los buscadores. Nos referimos a resultados orgánicos porque no son espacios pagados, sino el resultado natural que Google ofrece tras introducir nuestra búsqueda.&lt;/li>
 &lt;li>PPC son los pagos por clic. Se trata de una campaña pagada en la que escogemos las palabras claves por la que queremos aparecer en la búsqueda. Cada clic se sumaría al importe final a pagar. Este tipo de publicidad digital, si ubica en la barra lateral derecha del buscador, quedando diferenciada de los resultados orgánicos que se sitúan en la parte inferior.&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Docs: Streamlit</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/streamlit/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/streamlit/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;ul>
+&lt;li>&lt;a href="https://streamlit.io/">https://streamlit.io/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pip install streamlit
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>streamlit hello
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

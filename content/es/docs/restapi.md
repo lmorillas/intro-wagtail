@@ -10,7 +10,10 @@ tags: []
 {{% pageinfo %}}
 * https://docs.wagtail.org/en/stable/advanced_topics/api/index.html
 * https://www.django-rest-framework.org/
-* https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b
+* https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b 
+* https://learnwagtail.com/tutorials/how-to-enable-the-v2-api-to-create-a-headless-cms
+
+* https://www.caktusgroup.com/blog/2019/02/01/creating-api-endpoint-django-rest-framework/
 {{% /pageinfo %}}
 
 ## Configuración 
@@ -83,13 +86,16 @@ Puntos de acceso:
 ?limit=10&offset=10
 ```
 ### Ordenación
-
 `?order=-title`
 ### Filtrado
 `?slug=about`
 
 ### Búsqueda
 `?search=James+Joyce&order=-first_published_at&search_operator=and`
+
+### Añadir snippets a la api
+
+
 <!--
 ## serializers
 ```python
