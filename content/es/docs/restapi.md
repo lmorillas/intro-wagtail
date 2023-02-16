@@ -79,3 +79,27 @@ urlpatterns = [
 ```python
     'rest_framework',
 ```
+
+## Ejemplo uso js
+```html
+<script>
+    const url = 'http://127.0.0.1:8000/api/v2/pages/'
+
+    fetch(url, {
+        headers: {
+            'Accept': 'application/json',
+        },
+    })
+        .then(response => {
+            return response.json() //Convert response to JSON
+        })
+        .then(data => {
+            //Perform actions with the response data from the view
+            console.log(data)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
+</script>
+```
