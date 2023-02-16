@@ -1,0 +1,14 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – Ejercicios</title><link>https://lmorillas.github.io/intro-wagtail/docs/ejercicios/</link><description>Recent content in Ejercicios on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:29:17 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-wagtail/docs/ejercicios/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Canales TDT</title><link>https://lmorillas.github.io/intro-wagtail/docs/ejercicios/tdt/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/ejercicios/tdt/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="documentación">Documentación&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.tdtchannels.com/listas">https://www.tdtchannels.com/listas&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://www.tdtchannels.com/lists/tv.json">https://www.tdtchannels.com/lists/tv.json&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.tdtchannels.com/epg/TV.json">https://www.tdtchannels.com/epg/TV.json&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="en-obras">En obras&lt;/h2>
+&lt;p>&lt;img src="https://thumbs.gfycat.com/BabyishFailingAngelfish-size_restricted.gif" alt="En obras">&lt;/p></description></item></channel></rss>

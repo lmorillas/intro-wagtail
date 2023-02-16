@@ -10,9 +10,93 @@ tags: []
 {{% pageinfo %}}
 * https://docs.wagtail.org/en/stable/advanced_topics/api/index.html
 * https://www.django-rest-framework.org/
+* https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b 
+* https://learnwagtail.com/tutorials/how-to-enable-the-v2-api-to-create-a-headless-cms
+
+* https://www.caktusgroup.com/blog/2019/02/01/creating-api-endpoint-django-rest-framework/
 {{% /pageinfo %}}
 
+## Configuración 
+https://docs.wagtail.org/en/stable/advanced_topics/api/v2/configuration.html
 
+## Uso
+
+### Obtener contenido
+Puntos de acceso:
+* Pages `/api/v2/pages/`
+* Images `/api/v2/images/`
+* Documents `/api/v2/documents/`
+
+### Ejemplo
+` $ curl  <sitio>/api/v2/pages/`
+
+```json
+{
+    "meta": {
+        "total_count": 34
+    },
+    "items": [
+        {
+            "id": 60,
+            "meta": {
+                "type": "base.HomePage",
+                "detail_url": "http://127.0.0.1:8000/api/v2/pages/60/",
+                "html_url": "http://127.0.0.1:8000/",
+                "slug": "home",
+                "first_published_at": "2019-02-10T16:24:31.388000Z",
+                "locale": "en"
+            },
+            "title": "Welcome to the Wagtail Bakery!"
+        },
+        {
+            "id": 3,
+            "meta": {
+                "type": "breads.BreadsIndexPage",
+                "detail_url": "http://127.0.0.1:8000/api/v2/pages/3/",
+                "html_url": "http://127.0.0.1:8000/breads/",
+                "slug": "breads",
+                "first_published_at": "2019-02-10T11:34:11.560000Z",
+                "locale": "en"
+            },
+            "title": "Breads"
+        },
+        {
+            "id": 34,
+            "meta": {
+                "type": "breads.BreadPage",
+                "detail_url": "http://127.0.0.1:8000/api/v2/pages/34/",
+                "html_url": "http://127.0.0.1:8000/breads/anadama-bread/",
+                "slug": "anadama-bread",
+                "first_published_at": "2019-02-10T13:00:21.882000Z",
+                "locale": "en"
+            },
+            "title": "Anadama"
+        },
+``` 
+### Campos personalizados
+` $ curl  <sitio>/api/v2/pages/?fields=title,slug`
+
+### Serializers
+`$ curl <sitio>/api/v2/pages/?type=breads.BreadPage&fields=title,introduction,origin`
+
+### Paginación
+```
+?limit=10
+?offset=10
+?limit=10&offset=10
+```
+### Ordenación
+`?order=-title`
+### Filtrado
+`?slug=about`
+
+### Búsqueda
+`?search=James+Joyce&order=-first_published_at&search_operator=and`
+
+### Añadir snippets a la api
+
+
+<!--
 ## serializers
 ```python
 from rest_framework.serializers import ModelSerializer
@@ -80,6 +164,7 @@ urlpatterns = [
     'rest_framework',
 ```
 
+<<<<<<< HEAD
 ## Ejemplo uso js
 ```html
 <script>
@@ -103,3 +188,6 @@ urlpatterns = [
 
 </script>
 ```
+=======
+-->
+>>>>>>> d45c86fa0d1c7b9c16474a683baa988a721cd8fa
