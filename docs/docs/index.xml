@@ -840,7 +840,12 @@ console.log(error)
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="documentación">Documentación&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/adamchainz/django-cors-headers">https://github.com/adamchainz/django-cors-headers&lt;/a>&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/adamchainz/django-cors-headers">https://github.com/adamchainz/django-cors-headers&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.stackhawk.com/blog/django-cors-guide/">https://www.stackhawk.com/blog/django-cors-guide/&lt;/a>&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/div>
 &lt;h2 id="install-from-pip">Install from pip&lt;/h2>

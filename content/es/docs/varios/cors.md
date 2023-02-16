@@ -10,6 +10,8 @@ description: >
 ## Documentación
 * https://github.com/adamchainz/django-cors-headers
 
+* https://www.stackhawk.com/blog/django-cors-guide/
+
 {{% /pageinfo %}}
 
 ## Install from pip
