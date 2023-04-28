@@ -1,0 +1,112 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – Repaso</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/</link><description>Recent content in Repaso on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:29:17 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-wagtail/docs/repaso/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Primeros pasos</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/primerospasos/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/primerospasos/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="documentación">Documentación&lt;/h2>
+&lt;ul>
+&lt;li>Instalación y primeros pasos&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="previo">Previo&lt;/h2>
+&lt;ul>
+&lt;li>Cliente git&lt;/li>
+&lt;li>Python 3&lt;/li>
+&lt;li>Entorno virtual&lt;/li>
+&lt;li>Visual Studio Code&lt;/li>
+&lt;/ul>
+&lt;h2 id="instalación-wagtail">Instalación wagtail&lt;/h2>
+&lt;blockquote>
+&lt;p>Sigue el siguiente tutorial para instalar wagtail&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.wagtail.org/en/stable/getting_started/tutorial.html">https://docs.wagtail.org/en/stable/getting_started/tutorial.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="añade-un-framework-css-a-basehtml">Añade un framework CSS a &lt;code>base.html&lt;/code>&lt;/h2>
+&lt;p>Añade un framework CSS a &lt;code>base.html&lt;/code> por ejemplo &lt;a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap&lt;/a> o &lt;a href="https://bulma.io/">Bulma&lt;/a>.&lt;/p></description></item><item><title>Docs: Aplicación de ejemplo</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/aplicacion/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/aplicacion/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Añadir una nueva a aplicación al proyecto de Wagatil que tienes funcionando.&lt;/li>
+&lt;li>En este momento tiene que tener al menos tres aplicaciones: &lt;code>home&lt;/code>, &lt;code>search&lt;/code> y &lt;code>blog&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="nueva-aplicación">Nueva aplicación&lt;/h2>
+&lt;p>La nueva aplicación recogerá información de personas (actores, deportistas, elige el tema) y la mostrará en una página web.&lt;/p>
+&lt;ul>
+&lt;li>Diseña la página base de esta aplicación, que tendrá que recoger al menos la siguiente información:
+&lt;ul>
+&lt;li>Nombre completo&lt;/li>
+&lt;li>Fecha de nacimiento&lt;/li>
+&lt;li>Lugar de nacimiento (ciudad, país, coordenadas)&lt;/li>
+&lt;li>Biografía&lt;/li>
+&lt;li>Fotos&lt;/li>
+&lt;li>Enlaces a redes sociales&lt;/li>
+&lt;li>Otros detalles que consideres importantes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Tienes que crear un modelo para esta información&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>Página de listado de personas. Estarán agrupadas y ordenadas por categorías (equipos, o estilos, o categorías, o lo que corresponda)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Diseño de las plantillas de detalle de las personas y del listado general&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Navegación</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/navegacion/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/navegacion/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Mejorar la navegación del sitio&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="creación-de-un-navbar-para-tu-sitio-web">Creación de un navbar para tu sitio web&lt;/h2>
+&lt;ul>
+&lt;li>Tienes que crear un navbar para tu sitio web. Puede ser estático o dinámico. Puedes usar &lt;a href="https://github.com/jazzband/wagtailmenus">wagtailmenus&lt;/a> Mira la documentación del proyecto.&lt;/li>
+&lt;li>Estará adaptado al framwork CSS que has elegido para tu sitio web.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Copias de seguridad</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Hacer copias de seguridad del sitio para poder compartir la información en otro servidor&lt;/li>
+&lt;li>Migrar de SQLite a PostgreSQL o MySQL&lt;/li>
+&lt;li>&lt;a href="https://www.yellowduck.be/posts/migrating-your-wagtail-site-to-a-different-database-engine/">https://www.yellowduck.be/posts/migrating-your-wagtail-site-to-a-different-database-engine/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="dumpdata">Dumpdata&lt;/h2>
+&lt;h3 id="creación-del-volcado-de-datos">Creación del volcado de datos&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py dumpdata --natural-foreign --indent &lt;span style="color:#0000cf;font-weight:bold">2&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e contenttypes -e auth.permission &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.groupcollectionpermission &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.grouppagepermission -e wagtailimages.rendition &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e sessions &amp;gt; data.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Reemplaza &lt;code>\&lt;/code> por &lt;code>^&lt;/code> en Windows&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="preparación-de-la-base-de-datos-elimina-páginas-existentes">Preparación de la base de datos: elimina páginas existentes&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py shell
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; from wagtail.core.models import Page
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; Page.objects.all&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>.delete&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; exit&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="carga-de-datos">Carga de datos&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py loaddata data.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Opciones de despliegue</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Despliegue del sitio web en un servidor de producción&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;blockquote>
+&lt;p>Desplegaremos el sitio en AWS EC2 con RDS y S3&lt;/p>
+&lt;/blockquote></description></item><item><title>Docs: Estructura del CMS</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Organización de la estructura del CMS&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;ul>
+&lt;li>Creación de páginas en la aplicación home: contacto, acerca de, etc.&lt;/li>
+&lt;li>Creación de un pie de página uniforme para todo el sitio web&lt;/li>
+&lt;/ul></description></item></channel></rss>
