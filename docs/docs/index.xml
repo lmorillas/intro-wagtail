@@ -446,33 +446,17 @@ alias /home/app/web/mediafiles/;
 &lt;li>modify, save, publish and unpublish pages&lt;/li>
 &lt;li>set up users, and provide them with specific roles to create a publishing workflow&lt;/li>
 &lt;li>upload, edit and include images and documents&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Copias de seguridad</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Estructura del CMS</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="objetivo">Objetivo:&lt;/h2>
 &lt;ul>
-&lt;li>Hacer copias de seguridad del sitio para poder compartir la información en otro servidor&lt;/li>
-&lt;li>Migrar de SQLite a PostgreSQL o MySQL&lt;/li>
-&lt;li>&lt;a href="https://www.yellowduck.be/posts/migrating-your-wagtail-site-to-a-different-database-engine/">https://www.yellowduck.be/posts/migrating-your-wagtail-site-to-a-different-database-engine/&lt;/a>&lt;/li>
+&lt;li>Organización de la estructura del CMS&lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;h2 id="dumpdata">Dumpdata&lt;/h2>
-&lt;h3 id="creación-del-volcado-de-datos">Creación del volcado de datos&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py dumpdata --natural-foreign --indent &lt;span style="color:#0000cf;font-weight:bold">2&lt;/span> &lt;span style="color:#4e9a06">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e contenttypes -e auth.permission &lt;span style="color:#4e9a06">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.groupcollectionpermission &lt;span style="color:#4e9a06">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.grouppagepermission -e wagtailimages.rendition &lt;span style="color:#4e9a06">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e sessions &amp;gt; data.json
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
-&lt;p>Reemplaza &lt;code>\&lt;/code> por &lt;code>^&lt;/code> en Windows&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="preparación-de-la-base-de-datos-elimina-páginas-existentes">Preparación de la base de datos: elimina páginas existentes&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py shell
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; from wagtail.core.models import Page
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; Page.objects.all&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>.delete&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; exit&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="carga-de-datos">Carga de datos&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py loaddata data.json
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Miscelanea</title><link>https://lmorillas.github.io/intro-wagtail/docs/miscelanea/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/miscelanea/</guid><description>
+&lt;ul>
+&lt;li>Creación de páginas en la aplicación home: contacto, acerca de, etc.&lt;/li>
+&lt;li>Creación de un pie de página uniforme para todo el sitio web&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Miscelanea</title><link>https://lmorillas.github.io/intro-wagtail/docs/miscelanea/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/miscelanea/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;/div>
 &lt;h2 id="jerarquías-de-páginas">Jerarquías de páginas&lt;/h2>
@@ -506,7 +490,33 @@ alias /home/app/web/mediafiles/;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">ObjectList&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Page&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">settings_panels&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">heading&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;Settings&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">classname&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;settings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">])&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="limitar-richtextfield">Limitar RichTextField&lt;/h2>
-&lt;p>&lt;code>body = RichTextField(features=['h2', 'h3', 'bold', 'italic', 'link'])&lt;/code>&lt;/p></description></item><item><title>Docs: Opciones de despliegue</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</guid><description>
+&lt;p>&lt;code>body = RichTextField(features=['h2', 'h3', 'bold', 'italic', 'link'])&lt;/code>&lt;/p></description></item><item><title>Docs: Copias de seguridad</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Hacer copias de seguridad del sitio para poder compartir la información en otro servidor&lt;/li>
+&lt;li>Migrar de SQLite a PostgreSQL o MySQL&lt;/li>
+&lt;li>&lt;a href="https://www.yellowduck.be/posts/migrating-your-wagtail-site-to-a-different-database-engine/">https://www.yellowduck.be/posts/migrating-your-wagtail-site-to-a-different-database-engine/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="dumpdata">Dumpdata&lt;/h2>
+&lt;h3 id="creación-del-volcado-de-datos">Creación del volcado de datos&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py dumpdata --natural-foreign --indent &lt;span style="color:#0000cf;font-weight:bold">2&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e contenttypes -e auth.permission &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.groupcollectionpermission &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.grouppagepermission -e wagtailimages.rendition &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e sessions &amp;gt; data.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Reemplaza &lt;code>\&lt;/code> por &lt;code>^&lt;/code> en Windows&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="preparación-de-la-base-de-datos-elimina-páginas-existentes">Preparación de la base de datos: elimina páginas existentes&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py shell
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; from wagtail.core.models import Page
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; Page.objects.all&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>.delete&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; exit&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="carga-de-datos">Carga de datos&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py loaddata data.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Opciones de despliegue</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="objetivo">Objetivo:&lt;/h2>
 &lt;ul>
@@ -515,17 +525,7 @@ alias /home/app/web/mediafiles/;
 &lt;/div>
 &lt;blockquote>
 &lt;p>Desplegaremos el sitio en AWS EC2 con RDS y S3&lt;/p>
-&lt;/blockquote></description></item><item><title>Docs: Estructura del CMS</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;h2 id="objetivo">Objetivo:&lt;/h2>
-&lt;ul>
-&lt;li>Organización de la estructura del CMS&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;ul>
-&lt;li>Creación de páginas en la aplicación home: contacto, acerca de, etc.&lt;/li>
-&lt;li>Creación de un pie de página uniforme para todo el sitio web&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Aplicación películas</title><link>https://lmorillas.github.io/intro-wagtail/docs/peliculas/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/peliculas/</guid><description>
+&lt;/blockquote></description></item><item><title>Docs: Aplicación películas</title><link>https://lmorillas.github.io/intro-wagtail/docs/peliculas/</link><pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/peliculas/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Crear una aplicación de películas con la informaciń del siguiente archivo json. Es la lista de las películas más vistas de &lt;a href="https://www.imdb.com/chart/top/?ref_=nv_mv_250_6">imdb.com&lt;/a>.&lt;/p>
 &lt;/div>
@@ -942,12 +942,22 @@ console.log(error)
 &lt;div class="pageinfo pageinfo-primary">
 &lt;ul>
 &lt;li>&lt;a href="https://streamlit.io/">https://streamlit.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.streamlit.io/library/get-started/create-an-app">https://docs.streamlit.io/library/get-started/create-an-app&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/div>
+&lt;h2 id="instalar">Instalar&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pip install streamlit
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>streamlit hello
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: CORS</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ejecutar">Ejecutar&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>streamlit run your_script.py &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>-- script args&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Revisa &lt;a href="https://docs.streamlit.io/library/get-started/main-concepts">https://docs.streamlit.io/library/get-started/main-concepts&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="tutorial-de-ejemplo">Tutorial de ejemplo&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a href="https://docs.streamlit.io/library/get-started/create-an-app">https://docs.streamlit.io/library/get-started/create-an-app&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Docs: CORS</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="documentación">Documentación&lt;/h2>
 &lt;ul>

@@ -2,7 +2,7 @@
 title: "Copias de seguridad"
 date: 2021-10-21T10:29:17+02:00
 linkTitle: "Backup"
-weight: 40
+weight: 50
 description: >
     
 doc: >

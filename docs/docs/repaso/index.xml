@@ -64,6 +64,16 @@
 &lt;ul>
 &lt;li>Tienes que crear un navbar para tu sitio web. Puede ser estático o dinámico. Puedes usar &lt;a href="https://github.com/jazzband/wagtailmenus">wagtailmenus&lt;/a> Mira la documentación del proyecto.&lt;/li>
 &lt;li>Estará adaptado al framwork CSS que has elegido para tu sitio web.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Estructura del CMS</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="objetivo">Objetivo:&lt;/h2>
+&lt;ul>
+&lt;li>Organización de la estructura del CMS&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;ul>
+&lt;li>Creación de páginas en la aplicación home: contacto, acerca de, etc.&lt;/li>
+&lt;li>Creación de un pie de página uniforme para todo el sitio web&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Copias de seguridad</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/backup/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="objetivo">Objetivo:&lt;/h2>
@@ -99,14 +109,4 @@
 &lt;/div>
 &lt;blockquote>
 &lt;p>Desplegaremos el sitio en AWS EC2 con RDS y S3&lt;/p>
-&lt;/blockquote></description></item><item><title>Docs: Estructura del CMS</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/estructura/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;h2 id="objetivo">Objetivo:&lt;/h2>
-&lt;ul>
-&lt;li>Organización de la estructura del CMS&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;ul>
-&lt;li>Creación de páginas en la aplicación home: contacto, acerca de, etc.&lt;/li>
-&lt;li>Creación de un pie de página uniforme para todo el sitio web&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/blockquote></description></item></channel></rss>

@@ -221,12 +221,22 @@ alias /home/app/web/mediafiles/;
 &lt;div class="pageinfo pageinfo-primary">
 &lt;ul>
 &lt;li>&lt;a href="https://streamlit.io/">https://streamlit.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.streamlit.io/library/get-started/create-an-app">https://docs.streamlit.io/library/get-started/create-an-app&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/div>
+&lt;h2 id="instalar">Instalar&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pip install streamlit
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>streamlit hello
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: CORS</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ejecutar">Ejecutar&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>streamlit run your_script.py &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>-- script args&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Revisa &lt;a href="https://docs.streamlit.io/library/get-started/main-concepts">https://docs.streamlit.io/library/get-started/main-concepts&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="tutorial-de-ejemplo">Tutorial de ejemplo&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a href="https://docs.streamlit.io/library/get-started/create-an-app">https://docs.streamlit.io/library/get-started/create-an-app&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Docs: CORS</title><link>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/varios/cors/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="documentación">Documentación&lt;/h2>
 &lt;ul>
