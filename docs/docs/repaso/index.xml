@@ -100,13 +100,16 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; exit&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="carga-de-datos">Carga de datos&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py loaddata data.json
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Opciones de despliegue</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Si algo no funciona, revisa este enlace: &lt;a href="https://github.com/wagtail/bakerydemo/#preparing-this-archive-for-distribution">https://github.com/wagtail/bakerydemo/#preparing-this-archive-for-distribution&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Docs: Opciones de despliegue</title><link>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/repaso/despliegue/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="objetivo">Objetivo:&lt;/h2>
 &lt;ul>
 &lt;li>Despliegue del sitio web en un servidor de producción&lt;/li>
 &lt;/ul>
 &lt;/div>
+&lt;p>Intenta desplegar la siguiente aplicación: &lt;a href="https://github.com/wagtail/bakerydemo/">https://github.com/wagtail/bakerydemo/&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>Desplegaremos el sitio en AWS EC2 con RDS y S3&lt;/p>
 &lt;/blockquote></description></item></channel></rss>

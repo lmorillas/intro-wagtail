@@ -25,6 +25,7 @@ python manage.py dumpdata --natural-foreign --indent 2 \
     -e wagtailcore.grouppagepermission -e wagtailimages.rendition \
     -e sessions > data.json
 ```
+
 > Reemplaza `\` por `^` en Windows
 
 ### Preparación de la base de datos: elimina páginas existentes
@@ -39,3 +40,5 @@ python manage.py shell
 ```bash
 python manage.py loaddata data.json
 ```
+
+> Si algo no funciona, revisa este enlace: https://github.com/wagtail/bakerydemo/#preparing-this-archive-for-distribution

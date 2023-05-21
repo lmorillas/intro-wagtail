@@ -13,4 +13,6 @@ doc: >
 * Despliegue del sitio web en un servidor de producción
 {{% /pageinfo %}}
 
+Intenta desplegar la siguiente aplicación: https://github.com/wagtail/bakerydemo/
+
 > Desplegaremos el sitio en AWS EC2 con RDS y S3
