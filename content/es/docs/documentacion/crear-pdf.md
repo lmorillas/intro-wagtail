@@ -31,3 +31,5 @@ Hay muchas alternativas. Investigad por ejemplo Weasyprint o Pandoc
 * https://dev.to/thefern/exporting-a-markdown-book-to-pdf-with-pandoc-5414
 
 
+## Y más ...
+* https://flaviocopes.com/how-to-create-ebooks-markdown/ con honkit
