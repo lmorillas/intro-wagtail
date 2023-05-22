@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introducción a Django – Documentación</title><link>https://lmorillas.github.io/intro-wagtail/docs/documentacion/</link><description>Recent content in Documentación on Introducción a Django</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 21 Oct 2021 10:29:17 +0200</lastBuildDate><atom:link href="https://lmorillas.github.io/intro-wagtail/docs/documentacion/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Diagramas</title><link>https://lmorillas.github.io/intro-wagtail/docs/documentacion/primerospasos/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/documentacion/primerospasos/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="documentación">Documentación&lt;/h2>
+&lt;ul>
+&lt;li>Generación de diagramas de forma eficiente&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="graph_models">Graph_models&lt;/h2>
+&lt;ul>
+&lt;li>con graph_models se pueden generar diagramas de modelos: &lt;a href="https://django-extensions.readthedocs.io/en/latest/graph_models.html">https://django-extensions.readthedocs.io/en/latest/graph_models.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>tienes que instalar django-extensions y los requisitos: &lt;code>pygraphviz&lt;/code> o &lt;code>pydot&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Create a PNG image file called my_project_visualized.png with application grouping&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ python manage.py graph_models -a -g -o my_project_visualized.png
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="mermaid">Mermaid&lt;/h2>
+&lt;ul>
+&lt;li>También podemos generar diagramas con mermaid: &lt;a href="https://mermaid.js.org/">https://mermaid.js.org/&lt;/a>&lt;/li>
+&lt;li>ER diagram: &lt;a href="https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram">https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram&lt;/a>&lt;/li>
+&lt;li>Gantt: &lt;a href="https://mermaid.js.org/syntax/gantt.html">https://mermaid.js.org/syntax/gantt.html&lt;/a>&lt;/li>
+&lt;li>Requisitos: &lt;a href="https://mermaid.js.org/syntax/requirementDiagram.html">https://mermaid.js.org/syntax/requirementDiagram.html&lt;/a>&lt;/li>
+&lt;li>Y muchos otros: &lt;a href="https://mermaid.js.org/syntax/examples.html">https://mermaid.js.org/syntax/examples.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Esos diagramas los podemos incluir y generar desde el markdown de la documentación: &lt;a href="https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/">https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/&lt;/a>&lt;/p></description></item><item><title>Docs: Crear un PDF</title><link>https://lmorillas.github.io/intro-wagtail/docs/documentacion/crear-pdf/</link><pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate><guid>https://lmorillas.github.io/intro-wagtail/docs/documentacion/crear-pdf/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;h2 id="documentación">Documentación&lt;/h2>
+&lt;ul>
+&lt;li>Creación de pdfs a partir del markdown&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;p>Hay muchas alternativas. Investigad por ejemplo Weasyprint o Pandoc&lt;/p>
+&lt;h2 id="weasyprint">Weasyprint&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://weasyprint.org/">https://weasyprint.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://safjan.com/writing-a-book-or-ebook-in-markdown/">https://safjan.com/writing-a-book-or-ebook-in-markdown/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/treyerl/markdown-pdf">https://github.com/treyerl/markdown-pdf&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="pandoc">Pandoc&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://pandoc.org/">https://pandoc.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Wandmalfarbe/pandoc-latex-template">https://github.com/Wandmalfarbe/pandoc-latex-template&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/wikiti/pandoc-book-template">https://github.com/wikiti/pandoc-book-template&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://maehr.github.io/academic-pandoc-template/">https://maehr.github.io/academic-pandoc-template/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.to/thefern/exporting-a-markdown-book-to-pdf-with-pandoc-5414">https://dev.to/thefern/exporting-a-markdown-book-to-pdf-with-pandoc-5414&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
