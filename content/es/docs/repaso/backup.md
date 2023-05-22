@@ -23,7 +23,8 @@ python manage.py dumpdata --natural-foreign --indent 2 \
     -e contenttypes -e auth.permission \
     -e wagtailcore.groupcollectionpermission \
     -e wagtailcore.grouppagepermission -e wagtailimages.rendition \
-    -e sessions > data.json
+    -e wagtailsearch.indexentry -e wagtailsearch.sqliteftsindexentry \
+    -e sessions > data.json  # o la ruta de donde queramos guardar el archivo
 ```
 
 > Reemplaza `\` por `^` en Windows
@@ -31,7 +32,8 @@ python manage.py dumpdata --natural-foreign --indent 2 \
 ### Preparación de la base de datos: elimina páginas existentes
 ```bash
 python manage.py shell
->>> from wagtail.core.models import Page
+>>> from wagtail.models import Page
+# from wagtail.core.models import Page  # según versión
 >>> Page.objects.all().delete()
 >>> exit()
 ```

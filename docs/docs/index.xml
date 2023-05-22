@@ -505,13 +505,15 @@ alias /home/app/web/mediafiles/;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e contenttypes -e auth.permission &lt;span style="color:#4e9a06">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.groupcollectionpermission &lt;span style="color:#4e9a06">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailcore.grouppagepermission -e wagtailimages.rendition &lt;span style="color:#4e9a06">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e sessions &amp;gt; data.json
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e wagtailsearch.indexentry -e wagtailsearch.sqliteftsindexentry &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> -e sessions &amp;gt; data.json &lt;span style="color:#8f5902;font-style:italic"># o la ruta de donde queramos guardar el archivo&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
 &lt;p>Reemplaza &lt;code>\&lt;/code> por &lt;code>^&lt;/code> en Windows&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="preparación-de-la-base-de-datos-elimina-páginas-existentes">Preparación de la base de datos: elimina páginas existentes&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python manage.py shell
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; from wagtail.core.models import Page
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; from wagtail.models import Page
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># from wagtail.core.models import Page # según versión&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; Page.objects.all&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>.delete&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;&amp;gt;&amp;gt; exit&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="carga-de-datos">Carga de datos&lt;/h3>
