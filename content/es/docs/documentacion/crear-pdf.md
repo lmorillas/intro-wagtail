@@ -29,6 +29,7 @@ Hay muchas alternativas. Investigad por ejemplo Weasyprint o Pandoc
 * https://github.com/wikiti/pandoc-book-template
 * https://maehr.github.io/academic-pandoc-template/
 * https://dev.to/thefern/exporting-a-markdown-book-to-pdf-with-pandoc-5414
+* https://pianomanfrazier.com/post/write-a-book-with-markdown/
 
 
 ## Y más ...
